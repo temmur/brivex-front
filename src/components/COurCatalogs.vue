@@ -1,13 +1,13 @@
 <template>
-  <section id="catalog" class="w-full bg-[#FAFAF9] py-20 lg:py-32 overflow-hidden scroll-mt-24">
-    <div class="container mx-auto max-w-7xl">
+  <section id="catalog" class="w-full overflow-hidden bg-[#FAFAF9] py-14 sm:py-16 lg:py-24 xl:py-28 scroll-mt-24">
+    <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       
-      <div class="mb-20 flex flex-col items-center text-center">
-        <span class="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-green-600">{{ $t('premium-selection') }}</span>
+      <div class="mb-10 flex flex-col items-center text-center sm:mb-14 lg:mb-16">
+        <span class="mb-3 text-[11px] font-bold uppercase tracking-[0.3em] text-green-600">{{ $t('premium-selection') }}</span>
         <!-- <h2 class="text-4xl font-black tracking-tight text-gray-900 md:text-6xl">
           Наш <span class="text-green-600">каталог</span>
         </h2> -->
-        <h2 class="flex flex-wrap justify-center gap-x-3 text-4xl md:text-6xl font-black uppercase tracking-tight">
+        <h2 class="flex flex-wrap justify-center gap-x-2 text-3xl font-black uppercase tracking-tight sm:gap-x-3 sm:text-4xl md:text-5xl xl:text-6xl">
       <span class="text-[#111828]">
         {{ $t('catalog.title_part1') }}
       </span>
@@ -19,19 +19,19 @@
         <div class="mt-6 h-1 w-12 rounded-full bg-amber-400"></div>
       </div>
 
-      <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
         
         <article 
           v-for="product in productsData" 
           :key="product.id"
-          class="group relative flex flex-col items-center rounded-[40px] bg-white p-10 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-4 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_80px_-20px_rgba(22,163,74,0.25)]"
+          class="group relative flex h-full flex-col items-center rounded-[28px] bg-white p-6 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-2 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_80px_-20px_rgba(22,163,74,0.25)] sm:rounded-[34px] sm:p-8 xl:rounded-[40px] xl:p-10"
         >
-          <div class="absolute inset-0 z-0 origin-bottom scale-y-0 bg-gradient-to-br from-green-600 to-green-700 transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-y-100 rounded-[40px]"></div>
+          <div class="absolute inset-0 z-0 origin-bottom scale-y-0 rounded-[28px] bg-gradient-to-br from-green-600 to-green-700 transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-y-100 sm:rounded-[34px] xl:rounded-[40px]"></div>
 
-          <div class="relative z-10 mb-10">
+          <div class="relative z-10 mb-6 sm:mb-8 xl:mb-10">
             <div class="absolute inset-0 -m-4 rounded-full border border-green-500/0 transition-all duration-700 group-hover:m-0 group-hover:border-white/20"></div>
             
-            <div class="h-48 w-48 overflow-hidden rounded-full border-[8px] border-white bg-white shadow-2xl transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-2">
+            <div class="h-32 w-32 overflow-hidden rounded-full border-[6px] border-white bg-white shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:-rotate-2 sm:h-40 sm:w-40 sm:border-[7px] xl:h-48 xl:w-48 xl:border-[8px]">
               <img 
                 :src="product.imageUrl" 
                 :alt="product.name" 
@@ -43,12 +43,12 @@
           </div>
 
           <div class="relative z-10 flex flex-grow flex-col items-center text-center">
-            <p class="absolute -z-1 text-8xl -top-0 fo font-bold text-gray-100 opacity-[50%]">Brivex</p>
-            <h3 class="mb-4 text-2xl font-black uppercase tracking-tight text-green-600 transition-colors duration-500 group-hover:text-white">
+            <p class="pointer-events-none absolute -top-1 -z-10 text-6xl font-bold text-gray-100 opacity-[50%] sm:text-7xl xl:text-8xl">Brivex</p>
+            <h3 class="mb-3 text-xl font-black uppercase tracking-tight text-green-600 transition-colors duration-500 group-hover:text-white sm:text-2xl">
               {{ product.name }}
             </h3>
 
-            <div class="mb-10 w-full space-y-2 border-t border-gray-100 pt-6 transition-colors duration-500 group-hover:border-white/10">
+            <div class="mb-6 w-full space-y-2 border-t border-gray-100 pt-4 transition-colors duration-500 group-hover:border-white/10 sm:mb-8 sm:pt-5 xl:mb-10 xl:pt-6">
               <p 
                 v-for="(line, idx) in formatDetails(product.details)" 
                 :key="idx"
@@ -59,7 +59,7 @@
             </div>
 
             <button 
-              class="group/btn mt-auto flex w-full items-center justify-between rounded-2xl bg-green-600 px-6 py-4 text-[10px] font-black uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-amber-400 hover:text-gray-900 group-hover:bg-white group-hover:text-green-700"
+              class="group/btn mt-auto flex w-full items-center justify-between rounded-2xl bg-green-600 px-5 py-3 text-[11px] font-black uppercase tracking-[0.16em] text-white transition-all duration-300 hover:bg-amber-400 hover:text-gray-900 group-hover:bg-white group-hover:text-green-700 sm:px-6 sm:py-4 sm:text-[10px] sm:tracking-[0.2em]"
             >
               <span>Смотреть</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
