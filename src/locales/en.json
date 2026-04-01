@@ -1,0 +1,21 @@
+{
+    "nav": {
+        "ourCatalogue": "Our catalog"
+    },
+    "hero": {
+    "title": "{action} of dried fruits in Uzbekistan",
+    "action": "Wholesale supply"
+  },
+  "premium-selection": "Premium Selection",
+  "catalog": {
+    "title_part1": "Our",
+    "title_part2": "catalog"
+  },
+  "quality": {
+    "from_producer": "From the producer",
+    "eco_friendly": "Eco-friendly",
+    "no_gmo": "No genetically modified organisms (Non-GMO)",
+    "no_additives": "No added preservatives, flavorings, or chemical additives"
+  },
+  "global-logistics": "Global Logistics"
+}

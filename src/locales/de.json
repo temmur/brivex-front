@@ -1,0 +1,22 @@
+{
+     "nav": {
+        "ourCatalogue": "Unser Katalog"
+    },
+        "Wholesale": "Großhandel mit Trockenfrüchten in Usbekistan",
+        "hero": {
+            "title": "{action} mit Trockenfrüchten in Usbekistan",
+            "action": "Großhandel"
+    },
+    "premium-selection": "Premium-Auswahl",
+    "catalog": {
+    "title_part1": "Unser",
+    "title_part2": "Katalog"
+  },
+  "quality": {
+    "from_producer": "Vom Hersteller",
+    "eco_friendly": "Umweltfreundlich",
+    "no_gmo": "Keine gentechnisch veränderten Organismen (Ohne Gentechnik)",
+    "no_additives": "Ohne Zusatz von Konservierungsstoffen, Aromen oder chemischen Zusätzen"
+  },
+    "global-logistics": "Globale Logistik"
+}
