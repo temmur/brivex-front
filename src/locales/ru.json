@@ -9,7 +9,8 @@
   },
   "hero": {
     "title": "Оптовая {action} сухофруктов в Узбекистане",
-    "action": "продажа"
+    "action": "продажа",
+    "catalog_button": "Просмотреть каталог"
   },
   "premium-selection": "Премиум-Выбор",
   "catalog": {

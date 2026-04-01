@@ -124,53 +124,53 @@
   </section>
 
   <!-- QUALITY SECTION -->
-  <section id="quality" class="relative overflow-hidden bg-[#0f1d13] py-20 lg:py-24">
+  <section id="quality" class="relative overflow-hidden bg-[#0f1d13] py-14 sm:py-16 lg:py-20 xl:py-24 scroll-mt-24">
     <div class="quality-grid pointer-events-none absolute inset-0 opacity-28"></div>
-    <div class="pointer-events-none absolute -left-28 top-10 h-[300px] w-[300px] rounded-full bg-[#00A740]/25 blur-[120px]"></div>
-    <div class="pointer-events-none absolute -right-20 bottom-0 h-[320px] w-[320px] rounded-full bg-[#fbbf24]/15 blur-[120px]"></div>
+    <div class="pointer-events-none absolute -left-20 top-8 h-[220px] w-[220px] rounded-full bg-[#00A740]/25 blur-[90px] sm:-left-24 sm:h-[300px] sm:w-[300px] sm:blur-[120px]"></div>
+    <div class="pointer-events-none absolute -right-16 bottom-0 h-[240px] w-[240px] rounded-full bg-[#fbbf24]/15 blur-[90px] sm:-right-20 sm:h-[320px] sm:w-[320px] sm:blur-[120px]"></div>
 
-    <div class="container relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div
-        class="relative overflow-hidden rounded-[42px] border border-white/10 bg-gradient-to-br from-[#132719] via-[#111f16] to-[#0f1d13] p-8 shadow-[0_44px_90px_-34px_rgba(0,0,0,0.8)] md:p-12 lg:p-16"
+        class="relative overflow-hidden rounded-[26px] border border-white/10 bg-gradient-to-br from-[#132719] via-[#111f16] to-[#0f1d13] p-5 shadow-[0_44px_90px_-34px_rgba(0,0,0,0.8)] sm:rounded-[34px] sm:p-6 md:p-8 lg:rounded-[42px] lg:p-12 xl:p-16"
       >
-        <div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#00A740]/20 blur-[120px]"></div>
-        <div class="pointer-events-none absolute -bottom-16 -left-16 h-52 w-52 rounded-full bg-[#86efac]/15 blur-[100px]"></div>
+        <div class="pointer-events-none absolute -right-14 -top-14 h-44 w-44 rounded-full bg-[#00A740]/20 blur-[80px] sm:-right-20 sm:-top-20 sm:h-64 sm:w-64 sm:blur-[120px]"></div>
+        <div class="pointer-events-none absolute -bottom-10 -left-10 h-36 w-36 rounded-full bg-[#86efac]/15 blur-[70px] sm:-bottom-16 sm:-left-16 sm:h-52 sm:w-52 sm:blur-[100px]"></div>
 
-        <div class="relative z-10 grid gap-12 lg:grid-cols-12">
+        <div class="relative z-10 grid gap-8 sm:gap-10 lg:grid-cols-12 lg:gap-12">
           <div class="lg:col-span-7">
             <div class="flex items-center gap-4">
               <div class="h-px w-12 bg-[#22c55e]"></div>
-              <p class="text-[11px] font-black uppercase tracking-[0.4em] text-[#86efac]">{{ $t("about.quality.label") }}</p>
+              <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#86efac] sm:text-[11px] sm:tracking-[0.4em]">{{ $t("about.quality.label") }}</p>
             </div>
 
-            <h3 class="mt-6 text-4xl font-black leading-tight text-white md:text-6xl">
+            <h3 class="mt-5 text-3xl font-black leading-tight text-white sm:mt-6 sm:text-4xl lg:text-5xl xl:text-6xl">
               {{ $t("about.quality.title_main") }}
               <span class="text-[#86efac]">{{ $t("about.quality.title_highlight") }}</span>
             </h3>
 
-            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-[#d1d5db]">
+            <p class="mt-5 max-w-2xl text-base leading-relaxed text-[#d1d5db] sm:mt-6 sm:text-lg">
               {{ $t("about.quality.description") }}
             </p>
 
-            <div class="mt-10 grid gap-4 sm:grid-cols-2">
+            <div class="mt-6 grid gap-3 sm:mt-8 sm:gap-4 md:grid-cols-2 lg:mt-10">
               <article
                 v-for="pillar in qualityPillars"
                 :key="pillar.titleKey"
-                class="rounded-2xl border border-white/10 bg-white/[0.05] p-5 transition-colors duration-300 hover:border-[#86efac]/30 hover:bg-white/[0.07]"
+                class="rounded-2xl border border-white/10 bg-white/[0.05] p-4 transition-colors duration-300 hover:border-[#86efac]/30 hover:bg-white/[0.07] sm:p-5"
               >
-                <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#22c55e]/20 text-[#86efac]">
-                  <component :is="pillar.icon" class="h-5 w-5" />
+                <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-[#22c55e]/20 text-[#86efac] sm:mb-4 sm:h-10 sm:w-10">
+                  <component :is="pillar.icon" class="h-4.5 w-4.5 sm:h-5 sm:w-5" />
                 </div>
-                <h4 class="text-lg font-bold text-white">{{ $t(pillar.titleKey) }}</h4>
+                <h4 class="text-base font-bold text-white sm:text-lg">{{ $t(pillar.titleKey) }}</h4>
                 <p class="mt-2 text-sm leading-relaxed text-[#cbd5e1]">{{ $t(pillar.descriptionKey) }}</p>
               </article>
             </div>
           </div>
 
           <div class="lg:col-span-5">
-            <div class="rounded-[30px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm md:p-8">
-              <p class="text-[11px] font-black uppercase tracking-[0.35em] text-[#86efac]">{{ $t("about.quality.certificates_label") }}</p>
-              <div class="mt-4 flex flex-wrap gap-2">
+            <div class="rounded-[24px] border border-white/10 bg-white/[0.04] p-4 backdrop-blur-sm sm:rounded-[30px] sm:p-6 md:p-8">
+              <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#86efac] sm:text-[11px] sm:tracking-[0.35em]">{{ $t("about.quality.certificates_label") }}</p>
+              <div class="mt-3 flex flex-wrap gap-2 sm:mt-4">
                 <span
                   v-for="cert in aboutData.certifications"
                   :key="cert"
@@ -180,25 +180,25 @@
                 </span>
               </div>
 
-              <div class="mt-8 space-y-4">
+              <div class="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
                 <article
                   v-for="(step, index) in qualityFlow"
                   :key="step.titleKey"
-                  class="flex gap-4 rounded-2xl border border-white/10 bg-[#0f1d13]/60 p-4"
+                  class="flex gap-3 rounded-2xl border border-white/10 bg-[#0f1d13]/60 p-3 sm:gap-4 sm:p-4"
                 >
-                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#22c55e]/20 text-sm font-black text-[#86efac]">
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#22c55e]/20 text-xs font-black text-[#86efac] sm:h-9 sm:w-9 sm:text-sm">
                     {{ index + 1 }}
                   </div>
                   <div>
-                    <p class="text-sm font-bold uppercase tracking-[0.16em] text-white">{{ $t(step.titleKey) }}</p>
+                    <p class="text-[11px] font-bold uppercase tracking-[0.14em] text-white sm:text-sm sm:tracking-[0.16em]">{{ $t(step.titleKey) }}</p>
                     <p class="mt-1 text-sm leading-relaxed text-[#cbd5e1]">{{ $t(step.descriptionKey) }}</p>
                   </div>
                 </article>
               </div>
 
-              <div class="mt-8 rounded-2xl border border-[#22c55e]/30 bg-[#22c55e]/10 p-4">
-                <p class="text-[10px] font-black uppercase tracking-[0.26em] text-[#86efac]">{{ $t("about.quality.result_label") }}</p>
-                <p class="mt-2 text-sm leading-relaxed text-white">
+              <div class="mt-6 rounded-2xl border border-[#22c55e]/30 bg-[#22c55e]/10 p-4 sm:mt-8">
+                <p class="text-[10px] font-black uppercase tracking-[0.22em] text-[#86efac] sm:tracking-[0.26em]">{{ $t("about.quality.result_label") }}</p>
+                <p class="mt-2 text-sm leading-relaxed text-white sm:text-base">
                   {{ $t("about.quality.result_text") }}
                 </p>
               </div>

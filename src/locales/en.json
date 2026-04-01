@@ -9,7 +9,8 @@
   },
   "hero": {
     "title": "{action} of dried fruits in Uzbekistan",
-    "action": "Wholesale supply"
+    "action": "Wholesale supply",
+    "catalog_button": "View Catalog"
   },
   "premium-selection": "Premium Selection",
   "catalog": {

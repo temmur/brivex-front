@@ -10,7 +10,8 @@
   "Wholesale": "Großhandel mit Trockenfrüchten in Usbekistan",
   "hero": {
     "title": "{action} mit Trockenfrüchten in Usbekistan",
-    "action": "Großhandel"
+    "action": "Großhandel",
+    "catalog_button": "Katalog ansehen"
   },
   "premium-selection": "Premium-Auswahl",
   "catalog": {
