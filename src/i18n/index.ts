@@ -12,7 +12,7 @@ const getRuntimeLocale = () => {
   const browserLocale = navigator.language?.split('-')[0]
   const supportedLocales = ['en', 'ru', 'de']
   
-  if (supportedLocales.includes(browserLocale)) {
+  if (browserLocale && supportedLocales.includes(browserLocale)) {
     return browserLocale
   }
 
