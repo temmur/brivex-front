@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-[#FAFAF9] py-20 lg:py-32 overflow-hidden">
+  <section id="catalog" class="w-full bg-[#FAFAF9] py-20 lg:py-32 overflow-hidden scroll-mt-24">
     <div class="container mx-auto max-w-7xl">
       
       <div class="mb-20 flex flex-col items-center text-center">
@@ -43,7 +43,7 @@
           </div>
 
           <div class="relative z-10 flex flex-grow flex-col items-center text-center">
-            <p class="absolute -z-1 text-8xl -top-0 fo font-bold text-gray-100 opacity-[50%]">Sunny</p>
+            <p class="absolute -z-1 text-8xl -top-0 fo font-bold text-gray-100 opacity-[50%]">Brivex</p>
             <h3 class="mb-4 text-2xl font-black uppercase tracking-tight text-green-600 transition-colors duration-500 group-hover:text-white">
               {{ product.name }}
             </h3>

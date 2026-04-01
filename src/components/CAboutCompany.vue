@@ -1,342 +1,339 @@
 <template>
-<section class="relative overflow-hidden bg-[#f8fafc] py-32">
+  <section id="about" class="relative overflow-hidden bg-[#f3f7f1] py-20 lg:py-28 scroll-mt-24">
+    <div class="soft-grid pointer-events-none absolute inset-0 opacity-45"></div>
+    <div class="pointer-events-none absolute -left-24 top-0 h-[320px] w-[320px] rounded-full bg-[#00A740]/15 blur-[90px]"></div>
+    <div class="pointer-events-none absolute -right-24 bottom-0 h-[360px] w-[360px] rounded-full bg-[#fbbf24]/20 blur-[110px]"></div>
 
-<!-- background glow -->
-<div class="absolute -top-40 -left-40 h-[500px] w-[500px] rounded-full bg-green-200/30 blur-[140px]"></div>
-<div class="absolute -bottom-40 -right-40 h-[500px] w-[500px] rounded-full bg-amber-200/30 blur-[140px]"></div>
+    <div class="container relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid gap-14 lg:grid-cols-12 lg:items-center">
+        <div class="lg:col-span-7">
+          <span
+            class="inline-flex items-center gap-3 rounded-full border border-[#00A740]/15 bg-white/85 px-5 py-2 text-[11px] font-black uppercase tracking-[0.32em] text-[#006f2b]"
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-[#00A740] shadow-[0_0_0_6px_rgba(0,167,64,0.15)]"></span>
+            Sunny Fruit Production
+          </span>
 
-<div class="container relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 class="mt-7 text-4xl font-black leading-[1.05] tracking-tight text-[#111828] md:text-6xl">
+            {{ $t("about.hero.title_main") }}
+            <span class="bg-gradient-to-r from-[#00A740] to-[#66c17f] bg-clip-text text-transparent">{{ $t("about.hero.title_highlight") }}</span>
+          </h2>
 
-<div class="grid items-center gap-20 lg:grid-cols-2">
+          <p class="mt-7 max-w-2xl text-lg leading-relaxed text-[#374151]">
+            {{ $t("about.hero.description") }}
+          </p>
 
-<!-- LEFT CONTENT -->
-<div>
-
-<div class="mb-6 inline-flex items-center gap-3 rounded-full bg-green-50 px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-green-700">
-<span class="h-2 w-2 rounded-full bg-green-500 animate-ping"></span>
-Основана в 2015 году
-</div>
-
-<h2 class="mb-10 text-5xl font-black leading-tight text-gray-900 md:text-6xl">
-Sunny Fruit
-<span class="bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
-Production
-</span>
-</h2>
-
-<p class="text-lg text-gray-600 leading-relaxed mb-6">
-Мы являемся одним из ведущих производителей и экспортеров сухофруктов 
-в Узбекистане. Наша производственная база занимает более <b>1 гектара</b> 
-и оснащена современным оборудованием.
-</p>
-
-<p class="text-lg text-gray-900 font-medium leading-relaxed">
-Сегодня более <b>200 специалистов</b> обеспечивают полный цикл производства.
-</p>
-
-<!-- STATS -->
-<div class="mt-12 grid grid-cols-3 gap-8">
-
-<div class="flex flex-col">
-<span class="text-4xl font-black text-green-600">2015</span>
-<span class="text-xs uppercase tracking-widest text-gray-400">Основание</span>
-</div>
-
-<div class="flex flex-col">
-<span class="text-4xl font-black text-green-600">200+</span>
-<span class="text-xs uppercase tracking-widest text-gray-400">Сотрудников</span>
-</div>
-
-<div class="flex flex-col">
-<span class="text-4xl font-black text-green-600">1 га</span>
-<span class="text-xs uppercase tracking-widest text-gray-400">Производство</span>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- VIDEO / IMAGE -->
-<div class="relative">
-
-<div class="group relative overflow-hidden rounded-[40px] shadow-[0_60px_120px_-20px_rgba(0,0,0,0.25)]">
-
-<img
-src="/images/fruits/1.jpg"
-class="h-[520px] w-full object-cover transition duration-[1200ms] group-hover:scale-110"
-/>
-
-<!-- glass overlay -->
-<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
-
-<!-- play button -->
-<div class="absolute inset-0 flex items-center justify-center">
-
-<button class="flex h-24 w-24 items-center justify-center rounded-full bg-white/90 backdrop-blur-md shadow-2xl transition hover:scale-110">
-
-<svg xmlns="http://www.w3.org/2000/svg"
-fill="currentColor"
-viewBox="0 0 24 24"
-class="h-10 w-10 text-green-600 translate-x-[2px]">
-<path d="M8 5v14l11-7z"/>
-</svg>
-
-</button>
-
-</div>
-
-</div>
-
-<!-- floating badge -->
-<div class="absolute -bottom-10 -left-10 rounded-3xl bg-white px-8 py-6 shadow-2xl">
-
-<p class="text-3xl font-black text-green-600">100%</p>
-<p class="text-xs uppercase tracking-widest text-gray-400">
-Natural Products
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- EXPORT SECTION -->
-<div class="mt-32 bg-white py-24">
-
-<div class="container mx-auto max-w-7xl px-6">
-
-<div class="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-
-<div class="max-w-2xl">
-
-<h3 class="text-4xl font-black text-gray-900 mb-6">
-Глобальный экспорт
-</h3>
-
-<p class="text-lg text-gray-500">
-Наши клиенты находятся в крупнейших странах мира.
-Это подтверждает доверие к качеству нашей продукции.
-</p>
-
-</div>
-
-<div class="flex flex-wrap gap-3">
-
-<span
-v-for="country in aboutData.main.countries"
-:key="country"
-class="rounded-xl border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 shadow-sm transition hover:border-green-300 hover:text-green-600"
->
-{{ country }}
-</span>
-
-</div>
-
-</div>
-
-
-<!-- FEATURES -->
-  <div class="grid gap-8 md:grid-cols-3">
-    
-    <div class="group relative overflow-hidden rounded-[32px] border border-gray-100 bg-white p-10 transition-all duration-500 hover:border-[#00A740]/30 hover:shadow-[0_30px_60px_-15px_rgba(0,167,64,0.1)]">
-      <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#00A740]/5 transition-transform duration-700 group-hover:scale-[3]"></div>
-      
-      <div class="relative z-10">
-        <div class="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00A740]/10 text-[#00A740] transition-colors duration-500 group-hover:bg-[#00A740] group-hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-
-        <h4 class="mb-4 text-xl font-black text-[#111828]">Органическое сырье</h4>
-        
-        <p class="text-sm leading-relaxed text-gray-500 transition-colors group-hover:text-gray-700">
-          Мы используем только натуральные продукты из органического земледелия без химической обработки.
-        </p>
-
-        <div class="mt-6 h-1 w-0 rounded-full bg-[#00A740] transition-all duration-500 group-hover:w-12"></div>
-      </div>
-    </div>
-
-    <div class="group relative overflow-hidden rounded-[32px] border border-gray-100 bg-white p-10 transition-all duration-500 hover:border-[#00A740]/30 hover:shadow-[0_30px_60px_-15px_rgba(0,167,64,0.1)]">
-      <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#00A740]/5 transition-transform duration-700 group-hover:scale-[3]"></div>
-      
-      <div class="relative z-10">
-        <div class="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00A740]/10 text-[#00A740] transition-colors duration-500 group-hover:bg-[#00A740] group-hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-
-        <h4 class="mb-4 text-xl font-black text-[#111828]">Мировой экспорт</h4>
-        
-        <p class="text-sm leading-relaxed text-gray-500 transition-colors group-hover:text-gray-700">
-          Поставки в страны ЕС, США и Израиль с полным соблюдением международных стандартов.
-        </p>
-
-        <div class="mt-6 h-1 w-0 rounded-full bg-[#00A740] transition-all duration-500 group-hover:w-12"></div>
-      </div>
-    </div>
-
-    <div class="group relative overflow-hidden rounded-[32px] border border-gray-100 bg-white p-10 transition-all duration-500 hover:border-[#00A740]/30 hover:shadow-[0_30px_60px_-15px_rgba(0,167,64,0.1)]">
-      <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#00A740]/5 transition-transform duration-700 group-hover:scale-[3]"></div>
-      
-      <div class="relative z-10">
-        <div class="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00A740]/10 text-[#00A740] transition-colors duration-500 group-hover:bg-[#00A740] group-hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l4-2 6.7 3.3L15 8l7 3.5V20h-2v-4l-4-2-4 2v4H2Z"/><path d="M17 18h1"/><path d="M7 18h1"/><path d="M12 18h1"/></svg>
-        </div>
-
-        <h4 class="mb-4 text-xl font-black text-[#111828]">База переработки</h4>
-        
-        <p class="text-sm leading-relaxed text-gray-500 transition-colors group-hover:text-gray-700">
-          Собственная производственная база площадью более 1 гектара в столице Узбекистана.
-        </p>
-
-        <div class="mt-6 h-1 w-0 rounded-full bg-[#00A740] transition-all duration-500 group-hover:w-12"></div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-
-<!-- QUALITY SECTION -->
-<section class="relative w-full overflow-hidden bg-white py-24 lg:py-10">
-    <div class="container mx-auto max-w-7xl px-6">
-      
-      <div class="relative overflow-hidden rounded-[60px] bg-[#111828] p-10 md:p-20 lg:p-24 shadow-2xl">
-        
-        <div class="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-[#00A740]/10 blur-[120px]"></div>
-        <div class="absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-[#00A740]/5 blur-[100px]"></div>
-
-        <div class="relative z-10 grid gap-20 lg:grid-cols-12 lg:items-center">
-          
-          <div class="lg:col-span-7">
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-12 bg-[#00A740]"></div>
-              <span class="text-[11px] font-black uppercase tracking-[0.4em] text-[#00A740]">
-                Quality & Standards
-              </span>
-            </div>
-
-            <h3 class="mb-10 text-5xl font-black leading-tight text-white md:text-7xl">
-              Качество и <br/>
-              <span class="text-[#00A740]">технологии</span>
-            </h3>
-
-            <div class="space-y-6 text-lg leading-relaxed text-gray-300">
-              <p>
-                Производство компании <span class="text-white font-bold">Sunny Fruit Production</span> сертифицировано по международным стандартам <span class="border-b border-[#00A740]/40 text-white">HACCP и ISO 9001</span>. 
-                Мы гарантируем полную прослеживаемость сырья от поля до конечного потребителя.
-              </p>
-            </div>
-
-            <div class="mt-12 flex flex-wrap gap-12 border-t border-white/10 pt-12">
-              <div class="group">
-                <span class="text-5xl font-black text-white transition-colors group-hover:text-[#00A740]">100%</span>
-                <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#00A740]">
-                  Без консервантов
-                </p>
-              </div>
-              <div class="group">
-                <span class="text-5xl font-black text-white transition-colors group-hover:text-[#00A740]">Pure</span>
-                <p class="mt-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#00A740]">
-                  Натуральный вкус
-                </p>
-              </div>
-            </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+            <article
+              v-for="stat in quickStats"
+              :key="stat.labelKey"
+              class="rounded-3xl border border-white/70 bg-white/90 p-5 shadow-[0_24px_45px_-26px_rgba(17,24,39,0.45)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_34px_70px_-28px_rgba(0,167,64,0.4)]"
+            >
+              <p class="text-3xl font-black text-[#111828]">{{ stat.value ?? $t(stat.valueKey) }}</p>
+              <p class="mt-1 text-[11px] font-bold uppercase tracking-[0.22em] text-[#6b7280]">{{ $t(stat.labelKey) }}</p>
+            </article>
           </div>
+        </div>
 
-          <div class="lg:col-span-5">
-            <div class="relative">
-              <div class="absolute -inset-1 rounded-[42px] bg-gradient-to-br from-[#00A740]/20 to-transparent blur-md"></div>
-              
-              <div class="relative overflow-hidden rounded-[40px] border border-white/10 bg-white/5 p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#00A740]/30">
-                
-                <div class="mb-8 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#00A740] text-white shadow-[0_0_20px_rgba(0,167,64,0.4)]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
+        <div class="lg:col-span-5">
+          <div class="relative isolate">
+            <div class="pointer-events-none absolute -inset-3 rounded-[38px] bg-gradient-to-br from-[#00A740]/25 to-[#fbbf24]/20 blur-2xl"></div>
 
-                <h4 class="mb-6 text-xs font-black uppercase tracking-[0.3em] text-[#00A740]">
-                  Наша цель
-                </h4>
-                
-                <p class="text-2xl font-medium leading-relaxed text-white">
-                  «Стать <span class="text-[#00A740] italic">эталонным поставщиком</span> на мировом рынке и развивать национальный бренд 
-                  <span class="font-black text-white">Made in Uzbekistan</span>».
-                </p>
+            <div
+              class="relative overflow-hidden rounded-[34px] border border-white/70 bg-white shadow-[0_36px_80px_-30px_rgba(15,23,42,0.5)]"
+            >
+              <img
+                src="/images/fruits/1.jpg"
+                :alt="$t('about.hero.image_alt')"
+                class="h-[520px] w-full object-cover transition-transform duration-[1400ms] hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111828]/70 via-[#111828]/10 to-transparent"></div>
 
-                <div class="mt-10 flex items-center gap-2 opacity-50">
-                  <div class="h-1.5 w-1.5 rounded-full bg-[#00A740]"></div>
-                  <span class="text-[9px] font-bold uppercase tracking-widest text-white">Certified Organic Global Export</span>
+              <div class="absolute inset-x-0 bottom-0 p-6">
+                <div class="rounded-2xl border border-white/20 bg-white/15 px-4 py-3 backdrop-blur-md">
+                  <p class="text-[10px] font-black uppercase tracking-[0.32em] text-[#bbf7d0]">{{ $t("about.hero.overlay_title") }}</p>
+                  <p class="mt-1 text-lg font-semibold text-white">{{ $t("about.hero.overlay_text") }}</p>
                 </div>
               </div>
             </div>
-          </div>
 
+            <div
+              class="float-slow absolute -left-7 top-8 rounded-2xl border border-white/70 bg-white/95 px-5 py-4 shadow-[0_28px_55px_-24px_rgba(15,23,42,0.4)]"
+            >
+              <p class="text-xs font-black uppercase tracking-[0.2em] text-[#00A740]">{{ $t("about.hero.team_label") }}</p>
+              <p class="mt-1 text-2xl font-black text-[#111828]">{{ $t("about.hero.team_value") }}</p>
+            </div>
+
+            <div
+              class="float-delay absolute -bottom-7 right-7 rounded-2xl border border-white/40 bg-[#111828] px-5 py-4 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.55)]"
+            >
+              <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#86efac]">{{ $t("about.hero.certified_label") }}</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <span
+                  v-for="cert in aboutData.certifications.slice(0, 2)"
+                  :key="cert"
+                  class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-white"
+                >
+                  {{ cert }}
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-</section>
+  <section class="relative bg-white py-20 lg:py-24">
+    <div class="container mx-auto max-w-7xl px-6 lg:px-8">
+      <header class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+        <div class="max-w-3xl">
+          <p class="text-[11px] font-black uppercase tracking-[0.32em] text-[#00A740]">{{ $t("about.export.label") }}</p>
+          <h3 class="mt-4 text-4xl font-black leading-tight text-[#111828] md:text-5xl">{{ $t("about.export.title") }}</h3>
+          <p class="mt-5 text-lg leading-relaxed text-[#4b5563]">
+            {{ $t("about.export.description") }}
+          </p>
+        </div>
+        <div class="flex max-w-xl flex-wrap gap-3">
+          <span
+            v-for="countryKey in aboutData.main.countries"
+            :key="countryKey"
+            class="rounded-full border border-[#d1d5db] bg-[#f9fafb] px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#374151] transition-colors hover:border-[#00A740]/40 hover:bg-[#ecfdf3] hover:text-[#006f2b]"
+          >
+            {{ $t(countryKey) }}
+          </span>
+        </div>
+      </header>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <article
+          v-for="feature in exportFeatures"
+          :key="feature.titleKey"
+          class="group rounded-3xl border border-[#e5e7eb] bg-white p-7 shadow-[0_20px_45px_-28px_rgba(15,23,42,0.35)] transition-all duration-500 hover:-translate-y-1 hover:border-[#00A740]/40 hover:shadow-[0_28px_60px_-30px_rgba(0,167,64,0.45)]"
+        >
+          <div
+            class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ecfdf3] text-[#00A740] transition-colors duration-300 group-hover:bg-[#00A740] group-hover:text-white"
+          >
+            <component :is="feature.icon" class="h-5 w-5" />
+          </div>
+          <h4 class="text-xl font-black text-[#111828]">{{ $t(feature.titleKey) }}</h4>
+          <p class="mt-3 text-sm leading-relaxed text-[#6b7280]">{{ $t(feature.descriptionKey) }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY SECTION -->
+  <section id="quality" class="relative overflow-hidden bg-[#0f1d13] py-20 lg:py-24">
+    <div class="quality-grid pointer-events-none absolute inset-0 opacity-28"></div>
+    <div class="pointer-events-none absolute -left-28 top-10 h-[300px] w-[300px] rounded-full bg-[#00A740]/25 blur-[120px]"></div>
+    <div class="pointer-events-none absolute -right-20 bottom-0 h-[320px] w-[320px] rounded-full bg-[#fbbf24]/15 blur-[120px]"></div>
+
+    <div class="container relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        class="relative overflow-hidden rounded-[42px] border border-white/10 bg-gradient-to-br from-[#132719] via-[#111f16] to-[#0f1d13] p-8 shadow-[0_44px_90px_-34px_rgba(0,0,0,0.8)] md:p-12 lg:p-16"
+      >
+        <div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#00A740]/20 blur-[120px]"></div>
+        <div class="pointer-events-none absolute -bottom-16 -left-16 h-52 w-52 rounded-full bg-[#86efac]/15 blur-[100px]"></div>
+
+        <div class="relative z-10 grid gap-12 lg:grid-cols-12">
+          <div class="lg:col-span-7">
+            <div class="flex items-center gap-4">
+              <div class="h-px w-12 bg-[#22c55e]"></div>
+              <p class="text-[11px] font-black uppercase tracking-[0.4em] text-[#86efac]">{{ $t("about.quality.label") }}</p>
+            </div>
+
+            <h3 class="mt-6 text-4xl font-black leading-tight text-white md:text-6xl">
+              {{ $t("about.quality.title_main") }}
+              <span class="text-[#86efac]">{{ $t("about.quality.title_highlight") }}</span>
+            </h3>
+
+            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-[#d1d5db]">
+              {{ $t("about.quality.description") }}
+            </p>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-2">
+              <article
+                v-for="pillar in qualityPillars"
+                :key="pillar.titleKey"
+                class="rounded-2xl border border-white/10 bg-white/[0.05] p-5 transition-colors duration-300 hover:border-[#86efac]/30 hover:bg-white/[0.07]"
+              >
+                <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#22c55e]/20 text-[#86efac]">
+                  <component :is="pillar.icon" class="h-5 w-5" />
+                </div>
+                <h4 class="text-lg font-bold text-white">{{ $t(pillar.titleKey) }}</h4>
+                <p class="mt-2 text-sm leading-relaxed text-[#cbd5e1]">{{ $t(pillar.descriptionKey) }}</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="rounded-[30px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm md:p-8">
+              <p class="text-[11px] font-black uppercase tracking-[0.35em] text-[#86efac]">{{ $t("about.quality.certificates_label") }}</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  v-for="cert in aboutData.certifications"
+                  :key="cert"
+                  class="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-white"
+                >
+                  {{ cert }}
+                </span>
+              </div>
+
+              <div class="mt-8 space-y-4">
+                <article
+                  v-for="(step, index) in qualityFlow"
+                  :key="step.titleKey"
+                  class="flex gap-4 rounded-2xl border border-white/10 bg-[#0f1d13]/60 p-4"
+                >
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#22c55e]/20 text-sm font-black text-[#86efac]">
+                    {{ index + 1 }}
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold uppercase tracking-[0.16em] text-white">{{ $t(step.titleKey) }}</p>
+                    <p class="mt-1 text-sm leading-relaxed text-[#cbd5e1]">{{ $t(step.descriptionKey) }}</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="mt-8 rounded-2xl border border-[#22c55e]/30 bg-[#22c55e]/10 p-4">
+                <p class="text-[10px] font-black uppercase tracking-[0.26em] text-[#86efac]">{{ $t("about.quality.result_label") }}</p>
+                <p class="mt-2 text-sm leading-relaxed text-white">
+                  {{ $t("about.quality.result_text") }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
+import {
+  Clock as ClockIcon,
+  Leaf as LeafIcon,
+  Scale as ScaleIcon,
+  Truck as TruckIcon,
+} from "lucide-vue-next";
+
 const aboutData = {
   main: {
-    year: "2015",
-    employees: "200+",
-    area: "1 га",
-    countries: ["Германия", "Франция", "Нидерланды", "Италия", "Чехия", "США"]
+    countries: [
+      "about.export.countries.germany",
+      "about.export.countries.france",
+      "about.export.countries.netherlands",
+      "about.export.countries.italy",
+      "about.export.countries.czechia",
+      "about.export.countries.usa",
+    ],
   },
-  certifications: ["HACCP", "ISO 9001", "EU Organic", "USDA Organic"]
+  certifications: ["HACCP", "ISO 9001", "EU Organic", "USDA Organic"],
 };
+
+const quickStats = [
+  { value: "2015", labelKey: "about.stats.founded" },
+  { value: "200+", labelKey: "about.stats.employees" },
+  { valueKey: "about.stats.area_value", labelKey: "about.stats.production" },
+];
+
+const exportFeatures = [
+  {
+    titleKey: "about.export.features.natural_origin.title",
+    descriptionKey: "about.export.features.natural_origin.description",
+    icon: LeafIcon,
+  },
+  {
+    titleKey: "about.export.features.stable_timing.title",
+    descriptionKey: "about.export.features.stable_timing.description",
+    icon: TruckIcon,
+  },
+  {
+    titleKey: "about.export.features.weight_control.title",
+    descriptionKey: "about.export.features.weight_control.description",
+    icon: ScaleIcon,
+  },
+];
+
+const qualityPillars = [
+  {
+    titleKey: "about.quality.pillars.seasonal_raw.title",
+    descriptionKey: "about.quality.pillars.seasonal_raw.description",
+    icon: LeafIcon,
+  },
+  {
+    titleKey: "about.quality.pillars.gentle_processing.title",
+    descriptionKey: "about.quality.pillars.gentle_processing.description",
+    icon: ClockIcon,
+  },
+  {
+    titleKey: "about.quality.pillars.lab_check.title",
+    descriptionKey: "about.quality.pillars.lab_check.description",
+    icon: ScaleIcon,
+  },
+  {
+    titleKey: "about.quality.pillars.reliable_logistics.title",
+    descriptionKey: "about.quality.pillars.reliable_logistics.description",
+    icon: TruckIcon,
+  },
+];
+
+const qualityFlow = [
+  {
+    titleKey: "about.quality.flow.raw_selection.title",
+    descriptionKey: "about.quality.flow.raw_selection.description",
+  },
+  {
+    titleKey: "about.quality.flow.production.title",
+    descriptionKey: "about.quality.flow.production.description",
+  },
+  {
+    titleKey: "about.quality.flow.final_control.title",
+    descriptionKey: "about.quality.flow.final_control.description",
+  },
+];
 </script>
+
 <style scoped>
-
-.feature-card{
-padding:40px;
-border-radius:30px;
-background:white;
-box-shadow:0 20px 50px rgba(0,0,0,0.08);
-transition:.4s;
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(17, 24, 40, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 24, 40, 0.06) 1px, transparent 1px);
+  background-size: 46px 46px;
 }
 
-.feature-card:hover{
-transform:translateY(-8px);
-box-shadow:0 30px 70px rgba(0,0,0,0.15);
+.quality-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 42px 42px;
 }
 
-.feature-card h4{
-font-weight:800;
-font-size:20px;
-margin-bottom:12px;
+.float-slow {
+  animation: float-soft 7s ease-in-out infinite;
 }
 
-.feature-card p{
-color:#6b7280;
-font-size:14px;
-line-height:1.6;
+.float-delay {
+  animation: float-soft 8s ease-in-out infinite;
+  animation-delay: 1.5s;
 }
 
-.icon{
-width:50px;
-height:50px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#dcfce7;
-border-radius:14px;
-margin-bottom:16px;
-font-weight:900;
-color:#16a34a;
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
-h3, p, span {
+
+h2,
+h3,
+h4,
+p,
+span {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

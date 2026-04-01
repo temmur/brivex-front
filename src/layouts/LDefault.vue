@@ -6,7 +6,7 @@
     </header>
 
     <!-- Main content -->
-    <main class="flex-1">
+    <main class="flex-1 pt-20 lg:pt-24">
       <router-view />
     </main>
 

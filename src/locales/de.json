@@ -1,14 +1,19 @@
 {
-     "nav": {
-        "ourCatalogue": "Unser Katalog"
-    },
-        "Wholesale": "Großhandel mit Trockenfrüchten in Usbekistan",
-        "hero": {
-            "title": "{action} mit Trockenfrüchten in Usbekistan",
-            "action": "Großhandel"
-    },
-    "premium-selection": "Premium-Auswahl",
-    "catalog": {
+  "nav": {
+    "ourCatalogue": "Unser Katalog",
+    "home": "Startseite",
+    "catalog": "Katalog",
+    "delivery": "Lieferung",
+    "about": "Ueber uns",
+    "contacts": "Kontakte"
+  },
+  "Wholesale": "Großhandel mit Trockenfrüchten in Usbekistan",
+  "hero": {
+    "title": "{action} mit Trockenfrüchten in Usbekistan",
+    "action": "Großhandel"
+  },
+  "premium-selection": "Premium-Auswahl",
+  "catalog": {
     "title_part1": "Unser",
     "title_part2": "Katalog"
   },
@@ -18,5 +23,161 @@
     "no_gmo": "Keine gentechnisch veränderten Organismen (Ohne Gentechnik)",
     "no_additives": "Ohne Zusatz von Konservierungsstoffen, Aromen oder chemischen Zusätzen"
   },
-    "global-logistics": "Globale Logistik"
+  "global-logistics": "Globale Logistik",
+  "delivery": {
+    "title_main": "Lieferung nach Ihrem Zeitplan,",
+    "title_highlight": "ohne zusätzliche Risiken",
+    "description": "Wir organisieren den Exportprozess so, dass der Einkauf planbar bleibt: von der Chargenbestätigung bis zum versandbereiten Container mit transparenten Fristen und Dokumenten.",
+    "flow_label": "Lieferablauf",
+    "image_alt": "Trockenfrüchte bereit für den Export",
+    "overlay_title": "Exportdokumentation",
+    "overlay_text": "Vollständiges Dokumentenpaket für internationale Anforderungen",
+    "badge_shipping_title": "Versand",
+    "badge_shipping_value": "ab 20 Tagen",
+    "badge_transport_title": "Transport",
+    "badge_transport_value": "40'-Container oder Planen-Lkw",
+    "terms": {
+      "harvest_2026": "Ernte der aktuellen Saison 2026",
+      "delivery_20_days": "Lieferzeit ab 20 Tagen nach Zahlung",
+      "min_volume_20_tons": "Mindestliefermenge 20 Tonnen",
+      "transport_options": "Planen-Lkw oder 40-Fuß-Container"
+    },
+    "stats": {
+      "days_to_ship": "Tage bis Versand",
+      "min_batch": "Min. Charge",
+      "container": "Container"
+    },
+    "flow": {
+      "confirmation": {
+        "title": "Bestätigung",
+        "description": "Wir fixieren Spezifikation, Volumen und Fristen im kommerziellen Angebot."
+      },
+      "preparation": {
+        "title": "Vorbereitung",
+        "description": "Wir stellen die Charge zusammen, verpacken sie und bereiten die Exportdokumente vor."
+      },
+      "shipping": {
+        "title": "Versand",
+        "description": "Wir versenden die Ware im vereinbarten Transportfenster und teilen den Status mit."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title_main": "Wir produzieren Trockenfruechte",
+      "title_highlight": "in Exportqualitaet",
+      "description": "Wir schaffen Produkte mit bestaetigter Qualitaet: von der Rohstoffauswahl und schonenden Trocknung bis zur sicheren Verpackung und internationalen Logistik. Eine Produktionsflaeche von mehr als 1 Hektar und ein Team von ueber 200 Fachkraeften sorgen fuer stabile Ergebnisse fuer jeden Kunden.",
+      "image_alt": "Sunny Fruit Produktionslinie",
+      "overlay_title": "Rueckverfolgbarkeit",
+      "overlay_text": "Kontrolle in jeder Produktionsphase",
+      "team_label": "Team",
+      "team_value": "200+ Spezialisten",
+      "certified_label": "Zertifiziert"
+    },
+    "stats": {
+      "founded": "Gegruendet",
+      "employees": "Mitarbeiter",
+      "production": "Produktion",
+      "area_value": "1 ha"
+    },
+    "export": {
+      "label": "Globaler Export",
+      "title": "Zuverlaessiger Partner auf internationalen Maerkten",
+      "description": "Wir liefern Trockenfruechte nach Europa und in die USA und halten dabei einen einheitlichen Qualitaetsstandard fuer jeden Vertrag ein. Transparente Kommunikation, stabile Volumina und planbare Lieferfristen schaffen langfristiges Vertrauen.",
+      "countries": {
+        "germany": "Deutschland",
+        "france": "Frankreich",
+        "netherlands": "Niederlande",
+        "italy": "Italien",
+        "czechia": "Tschechien",
+        "usa": "USA"
+      },
+      "features": {
+        "natural_origin": {
+          "title": "Natuerlicher Ursprung",
+          "description": "Rohstoffe von zuverlaessigen Landwirten mit rueckverfolgbaren Lieferungen und Eingangskontrolle."
+        },
+        "stable_timing": {
+          "title": "Stabile Liefertermine",
+          "description": "Container werden in vereinbarten Zeitfenstern versandt, damit Sie Verkauf und Lager praezise planen koennen."
+        },
+        "weight_control": {
+          "title": "Gewichts- und Sortierkontrolle",
+          "description": "Jede Charge durchlaeuft Kalibrierung, Sortierung und abschliessende Kontrolle vor der Verpackung."
+        }
+      }
+    },
+    "quality": {
+      "label": "Qualitaet und Standards",
+      "title_main": "Qualitaet, die",
+      "title_highlight": "durch Fakten belegt ist",
+      "description": "Die Produktion von Sunny Fruit entspricht den Anforderungen von HACCP und ISO 9001. Wir dokumentieren den Weg jeder Charge, halten Prozessparameter stabil und pruefen die Sicherheit vor jeder Verladung.",
+      "certificates_label": "Zertifikate",
+      "pillars": {
+        "seasonal_raw": {
+          "title": "Rohstoffe der aktuellen Saison",
+          "description": "Wir verwenden frische Ernte und dokumentieren die Herkunft jeder Charge."
+        },
+        "gentle_processing": {
+          "title": "Schonende Verarbeitung",
+          "description": "Wir halten ein stabiles Temperaturprofil ein und bewahren den natuerlichen Geschmack."
+        },
+        "lab_check": {
+          "title": "Laborkontrolle",
+          "description": "Wir pruefen Feuchtigkeit und zentrale Sicherheitsindikatoren vor der Verpackung."
+        },
+        "reliable_logistics": {
+          "title": "Zuverlaessige Logistik",
+          "description": "Wir bereiten die Ware fuer den internationalen Versand gemaess den Vorgaben des Ziellandes vor."
+        }
+      },
+      "flow": {
+        "raw_selection": {
+          "title": "Rohstoffauswahl",
+          "description": "Eingangskontrolle und visuelle Sortierung der Lieferungen."
+        },
+        "production": {
+          "title": "Produktion",
+          "description": "Trocknung, Kalibrierung und schonende Verarbeitung nach standardisierten Prozesskarten."
+        },
+        "final_control": {
+          "title": "Endkontrolle",
+          "description": "Pruefung der Chargenparameter, Kennzeichnung und Vorbereitung der Exportdokumente."
+        }
+      },
+      "result_label": "Ergebnis fuer den Kunden",
+      "result_text": "Planbare Qualitaet in jeder Lieferung, transparente Dokumente und Sicherheit bei langfristigen Beschaffungen."
+    }
+  },
+  "footer": {
+    "cta": {
+      "label": "Zuverlaessiger Exportpartner",
+      "title": "Bereit, Ihre naechste Trockenfrucht-Lieferung zu besprechen?",
+      "description": "Wir erstellen eine Spezifikation, stimmen Volumen ab und bieten optimale Versandfristen fuer Ihren Markt.",
+      "button": "Jetzt kontaktieren"
+    },
+    "brand": {
+      "description": "Premium-Verarbeitung und Export von Trockenfruechten aus Usbekistan mit Fokus auf stabile Qualitaet, Sicherheit und langfristige Partnerschaft.",
+      "badge_export": "Export"
+    },
+    "sections": {
+      "navigation": "Navigation",
+      "catalog": "Katalog",
+      "contacts": "Kontakte"
+    },
+    "catalog": {
+      "sudan_raisin": "Sudan-Rosine",
+      "thompson_raisin": "Thompson-Rosine",
+      "golden_raisin": "Goldene Rosine",
+      "black_raisin": "Schwarze Rosine"
+    },
+    "contacts": {
+      "hours": "Mo-Sa: 09:00 - 18:00"
+    },
+    "bottom": {
+      "copyright": "© {year} LLC Sunny Fruit Production. Alle Rechte vorbehalten.",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen"
+    }
+  }
 }

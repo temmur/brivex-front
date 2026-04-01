@@ -1,8 +1,13 @@
 {
-    "nav": {
-        "ourCatalogue": "Our catalog"
-    },
-    "hero": {
+  "nav": {
+    "ourCatalogue": "Our catalog",
+    "home": "Home",
+    "catalog": "Catalog",
+    "delivery": "Delivery",
+    "about": "About",
+    "contacts": "Contacts"
+  },
+  "hero": {
     "title": "{action} of dried fruits in Uzbekistan",
     "action": "Wholesale supply"
   },
@@ -17,5 +22,161 @@
     "no_gmo": "No genetically modified organisms (Non-GMO)",
     "no_additives": "No added preservatives, flavorings, or chemical additives"
   },
-  "global-logistics": "Global Logistics"
+  "global-logistics": "Global Logistics",
+  "delivery": {
+    "title_main": "Delivery aligned with your schedule,",
+    "title_highlight": "without extra risks",
+    "description": "We organize the export process to keep procurement predictable: from batch confirmation to a shipment-ready container with transparent timelines and documentation.",
+    "flow_label": "Delivery Flow",
+    "image_alt": "Dried fruits ready for export",
+    "overlay_title": "Export Documentation",
+    "overlay_text": "Complete documentation package for international requirements",
+    "badge_shipping_title": "Shipping",
+    "badge_shipping_value": "from 20 days",
+    "badge_transport_title": "Transport",
+    "badge_transport_value": "40' container or curtain-side truck",
+    "terms": {
+      "harvest_2026": "Current 2026 season harvest",
+      "delivery_20_days": "Delivery time from 20 days after payment",
+      "min_volume_20_tons": "Minimum shipment volume 20 tons",
+      "transport_options": "Curtain-side truck or 40-foot container"
+    },
+    "stats": {
+      "days_to_ship": "Days to shipment",
+      "min_batch": "Min. batch",
+      "container": "Container"
+    },
+    "flow": {
+      "confirmation": {
+        "title": "Confirmation",
+        "description": "We lock specification, volume, and timeline in a commercial offer."
+      },
+      "preparation": {
+        "title": "Preparation",
+        "description": "We prepare the batch, packaging, and complete export documents."
+      },
+      "shipping": {
+        "title": "Shipping",
+        "description": "We dispatch cargo in the agreed transport window and share status updates."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title_main": "We produce dried fruits",
+      "title_highlight": "of export grade",
+      "description": "We create products with verified quality: from raw material selection and gentle drying to safe packaging and international logistics. A production site of more than 1 hectare and a team of 200+ specialists allow us to deliver consistent results for every client.",
+      "image_alt": "Sunny Fruit production line",
+      "overlay_title": "Traceability",
+      "overlay_text": "Control at every production stage",
+      "team_label": "Team",
+      "team_value": "200+ specialists",
+      "certified_label": "Certified"
+    },
+    "stats": {
+      "founded": "Founded",
+      "employees": "Employees",
+      "production": "Production",
+      "area_value": "1 ha"
+    },
+    "export": {
+      "label": "Global Export",
+      "title": "Reliable partner in international markets",
+      "description": "We supply dried fruits to Europe and the USA while maintaining one quality standard for every contract. Transparent communication, stable volumes, and predictable delivery timelines build long-term partner trust.",
+      "countries": {
+        "germany": "Germany",
+        "france": "France",
+        "netherlands": "Netherlands",
+        "italy": "Italy",
+        "czechia": "Czechia",
+        "usa": "USA"
+      },
+      "features": {
+        "natural_origin": {
+          "title": "Natural Origin",
+          "description": "Raw materials from trusted farmers with traceable sourcing and incoming quality control."
+        },
+        "stable_timing": {
+          "title": "Stable Delivery Timelines",
+          "description": "Containers are shipped within agreed windows so you can plan sales and warehouse operations accurately."
+        },
+        "weight_control": {
+          "title": "Weight and Sorting Control",
+          "description": "Every batch goes through calibration, sorting, and final quality verification before packaging."
+        }
+      }
+    },
+    "quality": {
+      "label": "Quality & Standards",
+      "title_main": "Quality that is",
+      "title_highlight": "proven by facts",
+      "description": "Sunny Fruit production is aligned with HACCP and ISO 9001 requirements. We document each batch path, keep process parameters stable, and verify safety before every shipment.",
+      "certificates_label": "Certificates",
+      "pillars": {
+        "seasonal_raw": {
+          "title": "Current Season Raw Materials",
+          "description": "We use fresh harvest and record the origin of each batch."
+        },
+        "gentle_processing": {
+          "title": "Gentle Processing",
+          "description": "We keep a stable temperature profile to preserve the product's natural taste."
+        },
+        "lab_check": {
+          "title": "Laboratory Verification",
+          "description": "We check moisture and key safety indicators before packaging."
+        },
+        "reliable_logistics": {
+          "title": "Reliable Logistics",
+          "description": "We prepare cargo for international shipping according to destination country requirements."
+        }
+      },
+      "flow": {
+        "raw_selection": {
+          "title": "Raw Selection",
+          "description": "Incoming quality control and visual sorting of supplies."
+        },
+        "production": {
+          "title": "Production",
+          "description": "Drying, calibration, and careful processing according to standardized process maps."
+        },
+        "final_control": {
+          "title": "Final Control",
+          "description": "Batch parameter verification, labeling, and export document preparation."
+        }
+      },
+      "result_label": "Client Outcome",
+      "result_text": "Predictable quality in every shipment, transparent documentation, and confidence for long-term procurement."
+    }
+  },
+  "footer": {
+    "cta": {
+      "label": "Trusted Export Partner",
+      "title": "Ready to discuss your next dried fruit shipment?",
+      "description": "We will prepare a specification, align volumes, and offer optimal shipping timelines for your market.",
+      "button": "Contact Now"
+    },
+    "brand": {
+      "description": "Premium processing and export of dried fruits from Uzbekistan with a focus on stable quality, safety, and long-term partnership.",
+      "badge_export": "Export"
+    },
+    "sections": {
+      "navigation": "Navigation",
+      "catalog": "Catalog",
+      "contacts": "Contacts"
+    },
+    "catalog": {
+      "sudan_raisin": "Sudanese Raisin",
+      "thompson_raisin": "Thompson Raisin",
+      "golden_raisin": "Golden Raisin",
+      "black_raisin": "Black Raisin"
+    },
+    "contacts": {
+      "hours": "Mon-Sat: 09:00 - 18:00"
+    },
+    "bottom": {
+      "copyright": "© {year} LLC Sunny Fruit Production. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    }
+  }
 }

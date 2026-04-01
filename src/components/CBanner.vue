@@ -1,6 +1,7 @@
 <template>
-  <section 
-    class="relative w-full overflow-hidden bg-[#FAFAF9] py-20  lg:py-20 perspective-1000"
+  <section
+    id="home"
+    class="relative w-full overflow-hidden bg-[#FAFAF9] py-20  lg:py-20 perspective-1000 scroll-mt-24"
     @mousemove="handleMouseMove"
     @mouseleave="resetMouse"
   >

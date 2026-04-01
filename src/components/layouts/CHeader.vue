@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/90 px-4 py-3 backdrop-blur-md lg:py-4">
+  <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-gray-100 bg-white/90 px-4 py-3 backdrop-blur-md lg:py-4">
     <div class="mx-auto flex max-w-7xl container items-center justify-between">
       
       <div class="flex items-center transition-transform hover:scale-105">
@@ -12,17 +12,15 @@
        </router-link>
       </div>
 
-      <nav class="hidden items-center gap-10 lg:flex">
-        <a href="#" class="nav-link">{{ $t('nav.ourCatalogue') }}</a>
-        
-        <div class="relative flex flex-col items-center group">
-          <a href="#" class="font-bold text-green-600">{{ $t('nav.products') }}</a>
-          <span class="absolute -bottom-1 h-0.5 w-6 rounded-full bg-orange-400"></span>
-        </div>
-
-        <a href="#" class="nav-link">{{ $t('nav.blog') }}</a>
-        <a href="#" class="nav-link">{{ $t('nav.gallery') }}</a>
-        <a href="#" class="nav-link">{{ $t('nav.ourCatalogue') }}</a>
+      <nav class="hidden items-center gap-9 lg:flex">
+        <router-link
+          v-for="item in navItems"
+          :key="item.key"
+          :to="{ path: '/', hash: item.hash }"
+          :class="['nav-link', isActive(item.hash) && 'nav-link-active']"
+        >
+          {{ $t(`nav.${item.key}`) }}
+        </router-link>
       </nav>
 
       <div class="flex items-center gap-3 md:gap-8">
@@ -64,11 +62,15 @@
     >
       <div v-if="isMobileMenuOpen" class="absolute left-0 top-[100%] w-full bg-white border-b border-gray-100 shadow-xl lg:hidden">
         <div class="flex flex-col p-6 space-y-4">
-          <a @click="isMobileMenuOpen = false" href="#" class="mobile-nav-link">{{ $t('nav.home') }}</a>
-          <a @click="isMobileMenuOpen = false" href="#" class="mobile-nav-link text-green-600 font-bold">{{ $t('nav.products') }}</a>
-          <a @click="isMobileMenuOpen = false" href="#" class="mobile-nav-link">{{ $t('nav.blog') }}</a>
-          <a @click="isMobileMenuOpen = false" href="#" class="mobile-nav-link">{{ $t('nav.gallery') }}</a>
-          <a @click="isMobileMenuOpen = false" href="#" class="mobile-nav-link">{{ $t('nav.contacts') }}</a>
+          <router-link
+            v-for="item in navItems"
+            :key="`m-${item.key}`"
+            :to="{ path: '/', hash: item.hash }"
+            :class="['mobile-nav-link', isActive(item.hash) && 'mobile-nav-link-active']"
+            @click="isMobileMenuOpen = false"
+          >
+            {{ $t(`nav.${item.key}`) }}
+          </router-link>
           
           <hr class="border-gray-100" />
           
@@ -84,18 +86,67 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
+import { useRoute } from 'vue-router';
 import CLanguageSwitcher from '../common/CLanguageSwitcher.vue';
 
 const isMobileMenuOpen = ref(false);
+const route = useRoute();
+
+const navItems = computed(() => [
+  { key: 'home', hash: '#home' },
+  { key: 'catalog', hash: '#catalog' },
+  { key: 'delivery', hash: '#delivery' },
+  { key: 'about', hash: '#about' },
+  { key: 'contacts', hash: '#contacts' },
+]);
+
+const isActive = (hash) => {
+  if (hash === '#home') return route.path === '/' && (!route.hash || route.hash === '#home');
+  return route.hash === hash;
+};
 </script>
 
 <style scoped>
 .nav-link {
-  /* @apply text-sm font-semibold text-gray-600 transition-all hover:text-green-600; */
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4b5563;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  border-radius: 9999px;
+  background-color: #16a34a;
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link-active {
+  color: #16a34a;
+}
+
+.nav-link:hover::after,
+.nav-link-active::after {
+  width: 100%;
 }
 
 .mobile-nav-link {
-  /* @apply text-xl font-medium text-gray-800 transition-colors active:text-green-600; */
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link-active {
+  color: #16a34a;
 }
 </style>
