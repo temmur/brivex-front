@@ -16,8 +16,8 @@
         <router-link
           v-for="item in navItems"
           :key="item.key"
-          :to="{ path: '/', hash: item.hash }"
-          :class="['nav-link', isActive(item.hash) && 'nav-link-active']"
+          :to="item.to"
+          :class="['nav-link', isActive(item) && 'nav-link-active']"
         >
           {{ $t(`nav.${item.key}`) }}
         </router-link>
@@ -65,8 +65,8 @@
           <router-link
             v-for="item in navItems"
             :key="`m-${item.key}`"
-            :to="{ path: '/', hash: item.hash }"
-            :class="['mobile-nav-link', isActive(item.hash) && 'mobile-nav-link-active']"
+            :to="item.to"
+            :class="['mobile-nav-link', isActive(item) && 'mobile-nav-link-active']"
             @click="isMobileMenuOpen = false"
           >
             {{ $t(`nav.${item.key}`) }}
@@ -94,16 +94,25 @@ const isMobileMenuOpen = ref(false);
 const route = useRoute();
 
 const navItems = computed(() => [
-  { key: 'home', hash: '#home' },
-  { key: 'catalog', hash: '#catalog' },
-  { key: 'delivery', hash: '#delivery' },
-  { key: 'about', hash: '#about' },
-  { key: 'contacts', hash: '#contacts' },
+  { key: 'home', to: { path: '/', hash: '#home' } },
+  { key: 'catalog', to: { path: '/products' } },
+  { key: 'delivery', to: { path: '/', hash: '#delivery' } },
+  { key: 'about', to: { path: '/', hash: '#about' } },
+  { key: 'contacts', to: { path: '/', hash: '#contacts' } },
 ]);
 
-const isActive = (hash) => {
-  if (hash === '#home') return route.path === '/' && (!route.hash || route.hash === '#home');
-  return route.hash === hash;
+const isActive = (item) => {
+  if (item.key === 'catalog') {
+    return route.path === '/products';
+  }
+
+  const itemHash = item.to.hash;
+
+  if (itemHash === '#home') {
+    return route.path === '/' && (!route.hash || route.hash === '#home');
+  }
+
+  return route.path === '/' && route.hash === itemHash;
 };
 </script>
 
