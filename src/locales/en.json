@@ -15,7 +15,46 @@
   "premium-selection": "Premium Selection",
   "catalog": {
     "title_part1": "Our",
-    "title_part2": "catalog"
+    "title_part2": "catalog",
+    "view_button": "View",
+    "see_all": "See all",
+    "details": {
+      "grade": "Grade",
+      "method": "Method",
+      "weight": "Weight",
+      "kg_value": "{value} kg"
+    },
+    "grades": {
+      "high": "Premium"
+    },
+    "methods": {
+      "sun": "Sun-dried",
+      "air": "Air-dried",
+      "shade": "Shade-dried"
+    },
+    "products": {
+      "sudan_raisin": "Sudanese Raisin",
+      "thompson_raisin": "Thompson Raisin",
+      "golden_raisin": "Golden Raisin",
+      "black_raisin": "Black Raisin",
+      "dried_apricot": "Dried Apricot",
+      "prunes": "Prunes",
+      "dried_fig": "Dried Fig",
+      "dates": "Dates",
+      "dried_cherry": "Dried Cherry",
+      "dried_apple": "Dried Apple",
+      "dried_pear": "Dried Pear",
+      "dried_mulberry": "Dried Mulberry"
+    }
+  },
+  "products_page": {
+    "badge": "Full selection",
+    "title_part1": "All",
+    "title_part2": "dried fruits",
+    "description": "A complete export-ready assortment in one place: stable quality, transparent specs, and clear product overview for each item.",
+    "total_items": "{count} items in catalog",
+    "back_to_catalog": "Back to catalog",
+    "card_button": "Request price"
   },
   "quality": {
     "from_producer": "From the producer",

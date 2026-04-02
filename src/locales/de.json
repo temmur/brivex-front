@@ -16,7 +16,46 @@
   "premium-selection": "Premium-Auswahl",
   "catalog": {
     "title_part1": "Unser",
-    "title_part2": "Katalog"
+    "title_part2": "Katalog",
+    "view_button": "Ansehen",
+    "see_all": "Alle ansehen",
+    "details": {
+      "grade": "Sorte",
+      "method": "Methode",
+      "weight": "Gewicht",
+      "kg_value": "{value} kg"
+    },
+    "grades": {
+      "high": "Premium"
+    },
+    "methods": {
+      "sun": "Sonnengetrocknet",
+      "air": "Luftgetrocknet",
+      "shade": "Schattentrocknung"
+    },
+    "products": {
+      "sudan_raisin": "Sudan-Rosine",
+      "thompson_raisin": "Thompson-Rosine",
+      "golden_raisin": "Goldene Rosine",
+      "black_raisin": "Schwarze Rosine",
+      "dried_apricot": "Getrocknete Aprikose",
+      "prunes": "Pflaumen",
+      "dried_fig": "Getrocknete Feige",
+      "dates": "Datteln",
+      "dried_cherry": "Getrocknete Kirsche",
+      "dried_apple": "Getrockneter Apfel",
+      "dried_pear": "Getrocknete Birne",
+      "dried_mulberry": "Getrocknete Maulbeere"
+    }
+  },
+  "products_page": {
+    "badge": "Vollstaendiges Sortiment",
+    "title_part1": "Alle",
+    "title_part2": "Trockenfruechte",
+    "description": "Das komplette exportfaehige Sortiment an einem Ort: stabile Qualitaet, transparente Spezifikationen und ein klarer Produktueberblick.",
+    "total_items": "{count} Positionen im Katalog",
+    "back_to_catalog": "Zurueck zum Katalog",
+    "card_button": "Preis anfragen"
   },
   "quality": {
     "from_producer": "Vom Hersteller",

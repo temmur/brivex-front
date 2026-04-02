@@ -15,7 +15,46 @@
   "premium-selection": "Премиум-Выбор",
   "catalog": {
     "title_part1": "Наш",
-    "title_part2": "каталог"
+    "title_part2": "каталог",
+    "view_button": "Смотреть",
+    "see_all": "Смотреть все",
+    "details": {
+      "grade": "Сорт",
+      "method": "Метод",
+      "weight": "Вес",
+      "kg_value": "{value} кг"
+    },
+    "grades": {
+      "high": "Высший"
+    },
+    "methods": {
+      "sun": "Солнечный",
+      "air": "Воздушный",
+      "shade": "Теневой"
+    },
+    "products": {
+      "sudan_raisin": "Суданский изюм",
+      "thompson_raisin": "Рейзин Томпсон",
+      "golden_raisin": "Золотистый изюм",
+      "black_raisin": "Черный изюм",
+      "dried_apricot": "Курага",
+      "prunes": "Чернослив",
+      "dried_fig": "Сушеный инжир",
+      "dates": "Финики",
+      "dried_cherry": "Сушеная вишня",
+      "dried_apple": "Сушеное яблоко",
+      "dried_pear": "Сушеная груша",
+      "dried_mulberry": "Сушеная шелковица"
+    }
+  },
+  "products_page": {
+    "badge": "Полный ассортимент",
+    "title_part1": "Все",
+    "title_part2": "сухофрукты",
+    "description": "Подобрали в одном месте полный каталог экспортных позиций: стабильное качество, прозрачные характеристики и удобный обзор по каждому продукту.",
+    "total_items": "{count} позиций в каталоге",
+    "back_to_catalog": "Назад к каталогу",
+    "card_button": "Запросить цену"
   },
   "quality": {
     "from_producer": "От производителя",
