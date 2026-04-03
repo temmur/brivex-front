@@ -5,7 +5,7 @@
     <div class="pointer-events-none absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 1px 1px, #cfe0d3 1px, transparent 0); background-size: 24px 24px;"></div>
 
     <div class="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="relative overflow-hidden rounded-[36px] border border-[#dbe9da] bg-white px-6 py-7 shadow-[0_30px_80px_-45px_rgba(16,40,27,0.6)] sm:px-8 sm:py-9 lg:px-10 lg:py-11">
+      <!-- <div class="relative overflow-hidden rounded-[36px] border border-[#dbe9da] bg-white px-6 py-7 shadow-[0_30px_80px_-45px_rgba(16,40,27,0.6)] sm:px-8 sm:py-9 lg:px-10 lg:py-11">
         <div class="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#00A740]/15 to-transparent"></div>
         <div class="pointer-events-none absolute -right-24 -top-24 h-60 w-60 rounded-full bg-[#00A740]/10 blur-3xl"></div>
 
@@ -33,8 +33,51 @@
             </router-link>
           </div>
         </div>
-      </div>
+      </div> -->
 
+      <div class="relative mb-16 flex flex-col items-start justify-between gap-10 border-b border-slate-200/60 pb-12 lg:flex-row lg:items-end">
+        <div class="max-w-3xl">
+          <div class="mb-6 flex items-center gap-3">
+            <span class="relative flex h-2 w-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+            </span>
+            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
+              {{ t('products_page.badge') }}
+            </span>
+          </div>
+          
+          <h1 class="text-5xl font-black uppercase tracking-tighter text-slate-900 sm:text-6xl lg:text-7xl">
+            {{ t('products_page.title_part1') }} 
+            <span class="relative inline-block text-green-600">
+              {{ t('products_page.title_part2') }}
+              <svg class="absolute -bottom-2 left-0 h-3 w-full text-green-200" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
+          <p class="mt-8 max-w-xl text-sm font-medium leading-relaxed text-slate-500 sm:text-base">
+            {{ t('products_page.description') }}
+          </p>
+        </div>
+
+        <div class="flex shrink-0 items-center gap-2 rounded-full bg-white/60 p-2 shadow-sm ring-1 ring-slate-200 backdrop-blur-xl">
+          <div class="flex items-center gap-3 px-4">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Total</span>
+            <span class="text-sm font-black text-slate-900">{{ productsData.length }}</span>
+          </div>
+          <div class="h-8 w-px bg-slate-200"></div>
+          <router-link
+            :to="{ path: '/', hash: '#catalog' }"
+            class="group relative flex h-10 items-center justify-center gap-2 overflow-hidden rounded-full bg-slate-900 px-6 text-[10px] font-bold uppercase tracking-widest text-white transition-all hover:bg-green-600"
+          >
+            <span class="relative z-10">{{ t('products_page.back_to_catalog') }}</span>
+            <svg class="relative z-10 h-3 w-3 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+          </router-link>
+        </div>
+      </div>
       <div class="mt-9 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         <article
           v-for="product in productsData"
