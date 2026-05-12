@@ -74,7 +74,7 @@
             class="animate-float relative z-10 w-full max-w-[330px] transition-transform duration-200 ease-out sm:max-w-[440px] md:max-w-[520px] lg:max-w-[560px]"
             :style="parallaxStyle(14)"
           >
-            <div class="pointer-events-none absolute inset-0 rounded-[30px] border border-white/70 bg-white/45 shadow-[0_28px_70px_-30px_rgba(17,24,39,0.35)]"></div>
+            <div class="pointer-events-none absolute inset-0 rounded-[30px] "></div>
             <img 
               src="/images/dry-fruit2.png" 
               alt="Premium Dried Fruits from Uzbekistan" 
