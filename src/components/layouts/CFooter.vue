@@ -109,7 +109,7 @@
               class="inline-flex items-center gap-2 text-sm text-[#4b5563] transition-colors hover:text-[#111828]"
             >
               <MailIcon class="h-4 w-4 text-[#16a34a]" />
-              info@sunnyfruit.uz
+              info@brivex.uz
             </a>
             <p class="inline-flex items-center gap-2 text-sm text-[#4b5563]">
               <ClockIcon class="h-4 w-4 text-[#16a34a]" />
