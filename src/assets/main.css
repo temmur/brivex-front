@@ -5,3 +5,170 @@
     max-width: 1250px;
     margin: auto;
 }
+
+:root {
+    --theme-bg-start: #f7fbf7;
+    --theme-bg-end: #eef7f0;
+    --theme-surface: #ffffff;
+    --theme-surface-soft: #f4faf5;
+    --theme-text: #111828;
+    --theme-text-soft: #4b5563;
+    --theme-border: #d9e7dc;
+    --theme-accent: #00a740;
+    --theme-accent-strong: #058d40;
+    --theme-accent-contrast: #ffffff;
+    --theme-icon: #0c8d41;
+    --theme-gradient-from: #00a740;
+    --theme-gradient-to: #0a8d43;
+}
+
+:root[data-theme-mode='green'] {
+    --theme-bg-start: #ecfff1;
+    --theme-bg-end: #d6f5df;
+    --theme-surface: #f7fff9;
+    --theme-surface-soft: #e8faee;
+    --theme-text: #103720;
+    --theme-text-soft: #3d6a4e;
+    --theme-border: #bde6c9;
+    --theme-accent: #19be64;
+    --theme-accent-strong: #069a47;
+    --theme-accent-contrast: #ffffff;
+    --theme-icon: #068f42;
+    --theme-gradient-from: #18ba61;
+    --theme-gradient-to: #079946;
+}
+
+html,
+body {
+    min-height: 100%;
+    background: linear-gradient(180deg, var(--theme-bg-start), var(--theme-bg-end));
+    color: var(--theme-text);
+}
+
+#app {
+    min-height: 100vh;
+    background: transparent;
+    color: var(--theme-text);
+}
+
+:root[data-theme-mode='green'] body {
+    background:
+        radial-gradient(circle at 12% 12%, rgb(148 255 186 / 45%), transparent 36%),
+        radial-gradient(circle at 88% 14%, rgb(56 203 117 / 35%), transparent 35%),
+        linear-gradient(180deg, var(--theme-bg-start), var(--theme-bg-end));
+}
+
+:root[data-theme-mode='green'] * {
+    transition: background-color 0.26s ease, color 0.26s ease, border-color 0.26s ease, box-shadow 0.26s ease;
+}
+
+:root[data-theme-mode='green'] [class*="bg-[#FAFAF9]"],
+:root[data-theme-mode='green'] [class*="bg-[#f9fafb]"],
+:root[data-theme-mode='green'] [class*="bg-[#f7faf5]"],
+:root[data-theme-mode='green'] [class*="bg-[#f5f8f4]"],
+:root[data-theme-mode='green'] [class*="bg-[#eff5ec]"] {
+    background-color: var(--theme-surface-soft) !important;
+}
+
+:root[data-theme-mode='green'] [class*="bg-white"],
+:root[data-theme-mode='green'] [class*="bg-gray-50"],
+:root[data-theme-mode='green'] [class*="bg-gray-100"],
+:root[data-theme-mode='green'] [class*="bg-gray-200"],
+:root[data-theme-mode='green'] [class*="bg-slate-50"],
+:root[data-theme-mode='green'] [class*="bg-slate-100"] {
+    background-color: var(--theme-surface) !important;
+}
+
+:root[data-theme-mode='green'] [class*="bg-[#111828]"],
+:root[data-theme-mode='green'] [class*="bg-[#0f1d13]"],
+:root[data-theme-mode='green'] [class*="bg-[#132719]"],
+:root[data-theme-mode='green'] [class*="bg-[#0f2618]"],
+:root[data-theme-mode='green'] [class*="bg-[#07130c]"],
+:root[data-theme-mode='green'] [class*="bg-slate-900"] {
+    background-color: var(--theme-surface-soft) !important;
+}
+
+:root[data-theme-mode='green'] [class*="bg-green-600"],
+:root[data-theme-mode='green'] [class*="bg-green-700"],
+:root[data-theme-mode='green'] [class*="bg-green-500"],
+:root[data-theme-mode='green'] [class*="bg-[#00A740]"],
+:root[data-theme-mode='green'] [class*="bg-[#008533]"],
+:root[data-theme-mode='green'] [class*="bg-[#22c55e]"],
+:root[data-theme-mode='green'] [class*="bg-[#34d399]"] {
+    background-color: var(--theme-accent) !important;
+    color: var(--theme-accent-contrast) !important;
+}
+
+:root[data-theme-mode='green'] [class*="text-gray-900"],
+:root[data-theme-mode='green'] [class*="text-gray-800"],
+:root[data-theme-mode='green'] [class*="text-slate-900"],
+:root[data-theme-mode='green'] [class*="text-[#111828]"],
+:root[data-theme-mode='green'] [class*="text-[#0a0c10]"],
+:root[data-theme-mode='green'] [class*="text-[#0f5132]"] {
+    color: var(--theme-text) !important;
+}
+
+:root[data-theme-mode='green'] [class*="text-gray-700"],
+:root[data-theme-mode='green'] [class*="text-gray-600"],
+:root[data-theme-mode='green'] [class*="text-gray-500"],
+:root[data-theme-mode='green'] [class*="text-slate-600"],
+:root[data-theme-mode='green'] [class*="text-slate-500"],
+:root[data-theme-mode='green'] [class*="text-[#4b5563]"],
+:root[data-theme-mode='green'] [class*="text-[#6b7280]"],
+:root[data-theme-mode='green'] [class*="text-[#374151]"],
+:root[data-theme-mode='green'] [class*="text-[#8390a3]"],
+:root[data-theme-mode='green'] [class*="text-[#9ca3af]"],
+:root[data-theme-mode='green'] [class*="text-[#cbd5e1]"],
+:root[data-theme-mode='green'] [class*="text-[#d1d5db]"] {
+    color: var(--theme-text-soft) !important;
+}
+
+:root[data-theme-mode='green'] [class*="text-green-"],
+:root[data-theme-mode='green'] [class*="text-[#00A740]"],
+:root[data-theme-mode='green'] [class*="text-[#16a34a]"],
+:root[data-theme-mode='green'] [class*="text-[#11803a]"],
+:root[data-theme-mode='green'] [class*="text-[#007a2f]"],
+:root[data-theme-mode='green'] [class*="text-[#0b7f35]"],
+:root[data-theme-mode='green'] [class*="text-[#86efac]"],
+:root[data-theme-mode='green'] [class*="text-[#bbf7d0]"] {
+    color: var(--theme-accent-strong) !important;
+}
+
+:root[data-theme-mode='green'] [class*="text-amber-"] {
+    color: var(--theme-accent) !important;
+}
+
+:root[data-theme-mode='green'] [class*="border-gray-"],
+:root[data-theme-mode='green'] [class*="border-slate-"],
+:root[data-theme-mode='green'] [class*="border-[#e5e7eb]"],
+:root[data-theme-mode='green'] [class*="border-[#d1d5db]"],
+:root[data-theme-mode='green'] [class*="border-[#d9e7da]"],
+:root[data-theme-mode='green'] [class*="border-[#dbe9da]"] {
+    border-color: var(--theme-border) !important;
+}
+
+:root[data-theme-mode='green'] [class*="border-green-"],
+:root[data-theme-mode='green'] [class*="border-[#00A740]"],
+:root[data-theme-mode='green'] [class*="border-[#16a34a]"] {
+    border-color: var(--theme-accent) !important;
+}
+
+:root[data-theme-mode='green'] [class*="from-"] {
+    --tw-gradient-from: var(--theme-gradient-from) var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgb(24 186 97 / 0) var(--tw-gradient-to-position) !important;
+}
+
+:root[data-theme-mode='green'] [class*="to-"] {
+    --tw-gradient-to: var(--theme-gradient-to) var(--tw-gradient-to-position) !important;
+}
+
+:root[data-theme-mode='green'] svg {
+    color: inherit;
+}
+
+:root[data-theme-mode='green'] header,
+:root[data-theme-mode='green'] footer,
+:root[data-theme-mode='green'] main,
+:root[data-theme-mode='green'] section {
+    background-color: transparent !important;
+}

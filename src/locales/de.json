@@ -7,6 +7,10 @@
     "about": "Ueber uns",
     "contacts": "Kontakte"
   },
+  "mode": {
+    "white": "Weiss",
+    "green": "Gruen"
+  },
   "Wholesale": "Großhandel mit Trockenfrüchten in Usbekistan",
   "hero": {
     "title": "{action} mit Trockenfrüchten in Usbekistan",
@@ -31,7 +35,8 @@
     "methods": {
       "sun": "Sonnengetrocknet",
       "air": "Luftgetrocknet",
-      "shade": "Schattentrocknung"
+      "shade": "Schattentrocknung",
+      "pickled": "Eingelegt"
     },
     "products": {
       "sudan_raisin": "Sudan-Rosine",
@@ -56,6 +61,13 @@
     "total_items": "{count} Positionen im Katalog",
     "back_to_catalog": "Zurueck zum Katalog",
     "card_button": "Preis anfragen"
+  },
+  "product_page": {
+    "badge": "Produktdetails",
+    "back_to_products": "Zurueck zu Produkten",
+    "gallery": "Galerie",
+    "storage": "Lagerbedingungen",
+    "contact": "Preis anfragen"
   },
   "quality": {
     "from_producer": "Vom Hersteller",

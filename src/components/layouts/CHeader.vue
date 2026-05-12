@@ -24,7 +24,7 @@
       </nav>
 
       <div class="flex items-center gap-3 md:gap-8">
-        
+        <!-- <CModeSwitcher class="hidden md:inline-flex" /> -->
         <CLanguageSwitcher />
 
         <div class="hidden items-center gap-3 sm:flex">
@@ -34,7 +34,7 @@
             </svg>
           </div>
           <div class="flex flex-col text-sm font-bold tracking-tight text-gray-900">
-            <a href="tel:+998900374044" class="hover:text-green-600 transition-colors">+998 (90) 037-40-44</a>
+            <a href="tel:+998900374044" class="hover:text-green-600 transition-colors">+998 (91) 408-31-46</a>
           </div>
         </div>
 
@@ -72,8 +72,12 @@
             {{ $t(`nav.${item.key}`) }}
           </router-link>
           
-          <hr class="border-gray-100" />
-          
+          <!-- <hr class="border-gray-100" />
+
+          <div class="pt-1">
+            <CModeSwitcher />
+          </div>
+           -->
           <div class="flex flex-col space-y-2 pt-2">
             <span class="text-xs uppercase tracking-widest text-gray-400 font-bold">Contact Us</span>
             <a href="tel:+998900374044" class="text-lg font-bold text-gray-800">+998 (90) 037-40-44</a>
@@ -89,6 +93,7 @@
 import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import CLanguageSwitcher from '../common/CLanguageSwitcher.vue';
+import CModeSwitcher from '../common/CModeSwitcher.vue';
 
 const isMobileMenuOpen = ref(false);
 const route = useRoute();

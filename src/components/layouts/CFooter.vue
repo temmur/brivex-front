@@ -19,7 +19,7 @@
           </div>
           <div class="lg:col-span-4 lg:justify-self-end">
             <a
-              href="tel:+998900374044"
+              href="tel:+998914083146"
               class="group inline-flex items-center gap-3 rounded-full border border-[#00A740]/30 bg-[#00A740] px-6 py-3 text-sm font-black uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#008533]"
             >
               <PhoneIcon class="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />

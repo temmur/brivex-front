@@ -3,7 +3,6 @@
     <div class="pointer-events-none absolute -left-28 top-0 h-[360px] w-[360px] rounded-full bg-[#00A740]/25 blur-[120px]"></div>
     <div class="pointer-events-none absolute -right-20 top-20 h-[320px] w-[320px] rounded-full bg-[#f59e0b]/20 blur-[110px]"></div>
     <div class="pointer-events-none absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 1px 1px, #cfe0d3 1px, transparent 0); background-size: 24px 24px;"></div>
-
     <div class="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <!-- <div class="relative overflow-hidden rounded-[36px] border border-[#dbe9da] bg-white px-6 py-7 shadow-[0_30px_80px_-45px_rgba(16,40,27,0.6)] sm:px-8 sm:py-9 lg:px-10 lg:py-11">
         <div class="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#00A740]/15 to-transparent"></div>
@@ -79,9 +78,10 @@
         </div>
       </div>
       <div class="mt-9 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <article
+        <!-- <router-link
           v-for="product in productsData"
           :key="product.id"
+          :to="{ name: 'ProductDetail', params: { slug: product.slug } }"
           class="catalog-card group relative isolate flex h-full flex-col overflow-hidden rounded-[30px] border border-[#d9e7da] bg-white p-4 shadow-[0_18px_40px_-30px_rgba(17,24,39,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_34px_68px_-34px_rgba(22,163,74,0.45)] sm:p-5"
         >
           <div class="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-[#00A740]/12 blur-[72px] transition-all duration-500 group-hover:bg-[#00A740]/18"></div>
@@ -89,8 +89,9 @@
           <div class="relative overflow-hidden rounded-[24px]">
             <img
               :src="product.imageUrl"
-              :alt="t(product.nameKey)"
+              :alt="getProductContent(product, locale).title"
               class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              @error="setImageFallback"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-[#07130c]/75 via-[#07130c]/10 to-transparent"></div>
             <div class="absolute inset-x-4 bottom-4 flex items-center justify-between gap-2">
@@ -107,7 +108,7 @@
           <div class="relative z-10 mt-5 flex flex-grow flex-col">
             <div class="flex min-h-[74px] items-start justify-between gap-3">
               <h2 class="text-2xl font-black uppercase leading-tight text-[#0f5132]">
-                {{ t(product.nameKey) }}
+                {{ getProductContent(product, locale).title }}
               </h2>
               <span class="shrink-0 rounded-full border border-[#c9e9d1] bg-[#eef9ef] px-3 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-[#11803a]">
                 {{ t(product.methodKey) }}
@@ -129,17 +130,76 @@
               </div>
             </div>
 
-            <a
-              href="tel:+998900374044"
+            <span
               class="group/btn mt-6 inline-flex items-center justify-between rounded-2xl bg-gradient-to-r from-[#00A740] to-[#00bc49] px-5 py-3 text-[11px] font-black uppercase tracking-[0.16em] text-white transition-all duration-300 hover:from-[#008d37] hover:to-[#00a740]"
             >
               <span>{{ t('products_page.card_button') }}</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </a>
+            </span>
           </div>
-        </article>
+        </router-link> -->
+        <router-link
+  v-for="product in productsData"
+  :key="product.id"
+  :to="{ name: 'ProductDetail', params: { slug: product.slug } }"
+  class="group relative flex h-auto flex-col overflow-hidden rounded-[40px] border border-[#d9e7da] bg-white p-5 shadow-[0_18px_40px_-30px_rgba(17,24,39,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-30px_rgba(22,163,74,0.3)]"
+>
+  <div class="relative aspect-[4/3] overflow-hidden rounded-[32px]">
+    <img
+      :src="product.imageUrl"
+      :alt="getProductContent(product, locale).title"
+      class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#07130c]/60 via-transparent to-transparent"></div>
+    
+    <div class="absolute inset-x-4 bottom-4 flex items-center justify-between gap-2">
+      <span class="rounded-full bg-black/40 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-white backdrop-blur-md border border-white/20">
+        #{{ product.id }}
+      </span>
+      <span class="rounded-full bg-black/40 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-white backdrop-blur-md border border-white/20">
+        {{ t(product.gradeKey) }}
+      </span>
+    </div>
+  </div>
+
+  <div class="relative z-10 mt-6 flex flex-grow flex-col">
+    
+    <div class="flex min-h-[80px] items-start justify-between gap-4">
+      <h2 class="text-2xl font-black uppercase leading-[1.1] tracking-tight text-[#0f5132]">
+        {{ getProductContent(product, locale).title }}
+      </h2>
+      <span class="shrink-0 rounded-full border border-[#e2efe4] bg-[#f0f9f1] px-3 py-1 text-[9px] font-black uppercase tracking-wider text-[#11803a]">
+        {{ t(product.methodKey) }}
+      </span>
+    </div>
+
+    <div class="mt-4 space-y-1.5">
+      <div class="flex items-center justify-between rounded-xl bg-[#f8faf8] px-4 py-3 border border-[#f0f4f0]">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-[#7c8b7e]">{{ t('catalog.details.grade') }}</span>
+        <span class="text-[10px] font-black uppercase text-[#0f5132]">{{ t(product.gradeKey) }}</span>
+      </div>
+      <div class="flex items-center justify-between rounded-xl bg-[#f8faf8] px-4 py-3 border border-[#f0f4f0]">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-[#7c8b7e]">{{ t('catalog.details.method') }}</span>
+        <span class="text-[10px] font-black uppercase text-[#0f5132]">{{ t(product.methodKey) }}</span>
+      </div>
+      <!-- <div class="flex items-center justify-between rounded-xl bg-[#f8faf8] px-4 py-3 border border-[#f0f4f0]">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-[#7c8b7e]">{{ t('catalog.details.weight') }}</span>
+        <span class="text-[10px] font-black uppercase text-[#0f5132]">{{ t('catalog.details.kg_value', { value: product.weightKg }) }}</span>
+      </div> -->
+    </div>
+
+    <div
+      class="group/btn mt-auto flex w-full items-center justify-between rounded-2xl bg-[#00A740] px-6 py-4 text-[11px] font-black uppercase tracking-[0.2em] text-white transition-all duration-300 group-hover:bg-[#00bc49] mt-8"
+    >
+      <span>{{ t('products_page.card_button') }}</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+    </div>
+  </div>
+</router-link>
       </div>
     </div>
   </section>
@@ -148,9 +208,14 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
-import { productsData } from '@/data/productsData'
+import { getProductContent, productsData } from '@/data/productsData'
 
-const { t } = useI18n()
+const { locale, t } = useI18n()
+
+const setImageFallback = (event: Event) => {
+  const image = event.target as HTMLImageElement
+  image.src = '/images/dry-fruit.avif'
+}
 </script>
 
 <style scoped>

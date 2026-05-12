@@ -7,6 +7,10 @@
     "about": "О компании",
     "contacts": "Контакты"
   },
+  "mode": {
+    "white": "Белый",
+    "green": "Зеленый"
+  },
   "hero": {
     "title": "Оптовая {action} сухофруктов в Узбекистане",
     "action": "продажа",
@@ -30,7 +34,8 @@
     "methods": {
       "sun": "Солнечный",
       "air": "Воздушный",
-      "shade": "Теневой"
+      "shade": "Теневой",
+      "pickled": "Маринованный"
     },
     "products": {
       "sudan_raisin": "Суданский изюм",
@@ -55,6 +60,13 @@
     "total_items": "{count} позиций в каталоге",
     "back_to_catalog": "Назад к каталогу",
     "card_button": "Запросить цену"
+  },
+  "product_page": {
+    "badge": "Информация о продукте",
+    "back_to_products": "Назад к продуктам",
+    "gallery": "Галерея",
+    "storage": "Условия хранения",
+    "contact": "Запросить цену"
   },
   "quality": {
     "from_producer": "От производителя",

@@ -7,6 +7,10 @@
     "about": "About",
     "contacts": "Contacts"
   },
+  "mode": {
+    "white": "White",
+    "green": "Green"
+  },
   "hero": {
     "title": "{action} of dried fruits in Uzbekistan",
     "action": "Wholesale supply",
@@ -30,7 +34,8 @@
     "methods": {
       "sun": "Sun-dried",
       "air": "Air-dried",
-      "shade": "Shade-dried"
+      "shade": "Shade-dried",
+      "pickled": "Pickled"
     },
     "products": {
       "sudan_raisin": "Sudanese Raisin",
@@ -55,6 +60,13 @@
     "total_items": "{count} items in catalog",
     "back_to_catalog": "Back to catalog",
     "card_button": "Request price"
+  },
+  "product_page": {
+    "badge": "Product details",
+    "back_to_products": "Back to products",
+    "gallery": "Gallery",
+    "storage": "Storage Conditions",
+    "contact": "Request price"
   },
   "quality": {
     "from_producer": "From the producer",

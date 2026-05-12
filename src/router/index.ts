@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 
 import PIndex from "@/views/PIndex.vue"
+import PProductSingle from "@/views/PProductSingle.vue"
 import PProducts from "@/views/PProducts.vue"
 import LDefault from "../layouts/LDefault.vue"
 import CPlayGround from "@/components/CPlayGround.vue"
@@ -25,6 +26,11 @@ const routes = [
           path: 'products',
           name: 'Products',
           component: PProducts
+        },
+        {
+          path: 'product/:slug',
+          name: 'ProductDetail',
+          component: PProductSingle
         }
     ]
   },

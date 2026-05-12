@@ -74,9 +74,9 @@ const isOpen = ref(false)
 const switcherRef = ref(null)
 
 const languages = [
-  { code: 'ru', label: 'Rus', flag: 'https://flagcdn.com/w40/ru.png' },
-  { code: 'en', label: 'Eng', flag: 'https://flagcdn.com/w40/gb.png' },
-  { code: 'de', label: 'Deu', flag: 'https://flagcdn.com/w40/de.png' }
+  { code: 'ru', label: 'Rus', flag: 'images/flags/ru.png' },
+  { code: 'en', label: 'Eng', flag: 'images/flags/gb.png' },
+  { code: 'de', label: 'Deu', flag: 'images/flags/de.png' }
 ]
 
 const currentLanguage = computed(() => {
